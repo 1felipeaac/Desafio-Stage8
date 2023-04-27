@@ -4,7 +4,7 @@ const MovieController = require("../controllers/MovieController")
 
 const movieRoutes = Router();
 
-const moviesController = new MovieController()
+const moviesController = new MovieController();
 
 movieRoutes.get("/", moviesController.index);
 movieRoutes.post("/:user_id", moviesController.create);
